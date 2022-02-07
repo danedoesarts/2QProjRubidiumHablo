@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>dane hablo</title>
+		<meta name = "author" content = "Dane Ezekiel Hablo">
+		<meta name = "keywords" content = "dane hablo">
+		<meta name = "revised" content = "17-11-2021">
+		<meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+		<link rel = "icon" href = "images/pfp.png" type = "image/gif">
+		<link rel = "stylesheet" href = "css/styles.css" type = "text/css">
+
+		<style>
+			/*Intros to Subpages*/
+			figure#graphic {
+				background-image: linear-gradient(to left, rgba(98, 146, 158, 0), rgba(98, 146, 158, 0.90));
+			}
+			section#introSubpages {
+				grid-column: 2 / 3;
+				grid-row: 2 / 3;
+				display: flex;
+				flex-direction: column;
+				gap: 50px;
+				margin-top: 50px;
+			}
+			a.panel {
+				text-decoration: none;
+			}
+			section#introSubpages > a.panel > div {
+				display: flex;
+				gap: 30px;
+				border-radius: 15px;
+				padding: 7px;
+				transition: 0.3s;
+			}
+			section#introSubpages > a.panel > div > img {
+				height: 100%;
+				width: 60%;
+				box-sizing: border-box;
+				border-radius: 15px;
+				border: 7px solid rgb(98, 146, 158);
+				transition: 0.3s;
+			}
+			section#introSubpages > a.panel > div > img:hover {
+				border: 7px solid rgb(247, 160, 114);
+			}
+			section#introSubpages > a > div > detail.text {
+				display: flex;
+				flex-direction: column;
+				align-self: center;
+			}
+			section#introSubpages > a > div > detail.text > * {
+				margin: 0px;
+			}
+			section#introSubpages > a > div > detail.text > p#title {
+				font-family: 'Raleway', sans-serif;
+				font-size: 35px;
+				text-decoration: none;
+				color: rgb(57, 61, 63);
+				transition: 0.3s;
+			}
+			section#introSubpages > a > div > detail.text > p#descr {
+				margin: 10px 0px;
+				font-family: 'Merriweather', serif;
+				font-size: 16px;
+				line-height: 1.5;
+				color: rgb(57, 61, 63);
+			}
+			section#introSubpages > a > div > detail.text > p#link {
+				font-family: 'Raleway', sans-serif;
+				font-size: 15px;
+				text-decoration: none;
+				color: rgb(98, 146, 158);
+				transition: 0.3s;
+			}
+			section#introSubpages > a > div > detail.text > p#title:hover, section#introSubpages > a > div > detail.text > p#link:hover {
+				color: rgb(247, 161, 114);
+			}
+			/*Blog Panels*/
+			section#blogPanels {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px;
+				margin: 50px 0px;
+				justify-content: space-between;
+			}
+			section#blogPanels > a.blog {
+				grid-column: 1 / 4;
+				grid-row: 1 / 2;
+				display: block;
+				font-family: 'Raleway', sans-serif;
+				font-size: 35px;
+				text-decoration: none;
+				color: rgb(57, 61, 63);
+				transition: 0.3s;
+			}
+			section#blogPanels > a.blog:hover {
+				color: rgb(247, 160, 114);
+			}
+			section#blogPanels > a.panel > div {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				border-radius: 15px;
+				padding: 7px;
+				background-color: rgb(98, 146, 158);
+				transition: 0.3s;
+			}
+			section#blogPanels > a.panel > div > img {
+				box-sizing: border-box;
+				border-radius: 7.5px;
+				width: 100%;
+			}
+			section#blogPanels > a.panel > div > detail {
+				padding: 5px;
+			}
+			section#blogPanels > a.panel > div > detail > p#title {
+				font-family: 'Raleway', sans-serif;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+				margin: 0px;
+			}
+			section#blogPanels > a.panel > div > detail > p#descr {
+				font-family: 'Merriweather', serif;
+				font-size: 11px;
+				color: rgb(255, 255, 255);
+				margin: 5px 0px;
+			}
+			section#blogPanels > a.panel > div:hover {
+				background-color: rgb(247, 160, 114);
+			}
+		</style>
+
+		<script src = "js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- The following code is not yet configured to be responsive to screen size & all images are subject to change-->
+
+		<!-- Navigation Bar -->
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a id = "active" href = "index.html">Home</a>
+					</li>
+					<li>
+						<a href = "htdocs/about.html">About</a>
+					</li>
+					<li>
+						<a href = "htdocs/portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href = "htdocs/projs.html">Projects</a>
+					</li>
+					<li>
+						<a href = "htdocs/blog.html">Blog</a>
+					</li>
+					<li>
+						<a href = "htdocs/comms.html">Commissions</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+
+			<!-- Main Graphic -->
+			<figure id = "graphic">
+				<img src = "images/homepage/main.png">
+			</figure>
+			<section id = "descr">
+				<p id = "name">hi, i'm dane</p>
+				<p id = "addescr">aspiring artist and animator</p>
+			</section>
+			<section id = "socials">
+				<p>Get in touch:</p>
+				<div>
+					<figure class = "twt">
+						<a href = "https://twitter.com/urboidane">
+							<img src = "images/socials/twt.png">
+						</a>
+					</figure>
+					<figure class = "ig">
+						<a href = "https://www.instagram.com/urboidane/">
+							<img src = "images/socials/ig.png">
+						</a>
+					</figure>
+				</div>
+			</section>
+
+			<!-- Intros to Subpages -->
+			<section id = "introSubpages">
+				<a class = "panel" href = "htdocs/portfolio.html">
+					<div>
+						<img src = "images/homepage/portfolio.png">
+						<detail class = "text">
+							<p id = "title" href = "htdocs/portfolio.html">Portfolio</p>
+							<p id = "descr">Immerse yourself in my humble little collection of artworks which shows how my skills and ideas have developed over time.</p>
+							<p id = "link" href = "htdocs/portfolio.html">Explore my portfolio!</p>
+						</detail>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/projs.html">
+					<div>
+						<img src = "images/homepage/projects.png">
+						<detail class = "text">
+							<p id = "title" href = "htdocs/projs.html">Projects</p>
+							<p id = "descr">Occasionally tackling big projects, I will be documenting them without giving out too many spoilers!</p>
+							<p id = "link" href = "htdocs/projs.html">Check out what they're doing right now!</p>
+						</detail>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/comms.html">
+					<div>
+						<img src = "images/homepage/comms.png">
+						<detail class = "text">
+							<p id = "title" href = "htdocs/comms.html">Commissions</p>
+							<p id = "descr">Do you wish to acquire a piece created by me for you? Well, you've come to the right place.</p>
+							<p id = "link" href = "htdocs/comms.html">Visit for more information!</p>
+						</detail>
+					</div>
+				</a>
+			</sectionsection>
+			
+			<!-- Blog -->
+			<section id = "blogPanels">
+				<a class = "blog" href = "htdocs/blog.html">Blog</a>
+				<a class = "panel" href = "htdocs/blogs/projManagement.html">
+					<div>
+						<img src = "images/blog/projmanage.png">
+						<detail>
+							<p id = "title">Project Management</p>
+							<p id = "descr">11/17/21 | Life Skills</p>
+						</detail>
+					</div>
+				</a>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<section id = "socials2">
+				<div>
+					<figure class = "twt">
+						<a href = "https://twitter.com/urboidane">
+							<img src = "images/socials/twt.png">
+						</a>
+					</figure>
+					<figure class = "ig">
+						<a href = "https://www.instagram.com/urboidane/">
+							<img src = "images/socials/ig.png">
+						</a>
+					</figure>
+				</div>
+			</section>
+			<section id = "email">
+				<a href = "https://mail.google.com/mail/#inbox?compose=GTvVlcSKjDVsqKKGztWPWQwrHmpPDJBKnpGzzZMkjHBbsCdqBMLCVHFpjFCfhPMkmClSQRKwSvklb">danezekielhablo@gmail.com</a>
+			</section>
+			<figure id = "button">	
+					<img src = "images/arrow.png">
+			</figure>
+			<div id = "blank1"></div>
+			<div id = "blank2"></div>
+		</footer>
+	</body>
+</html>
