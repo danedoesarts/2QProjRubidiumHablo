@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>dane hablo</title>
+		<meta name = "author" content = "Dane Ezekiel Hablo">
+		<meta name = "keywords" content = "HTML, Long Test, CS3">
+		<meta name = "revised" content = "12-11-2021">
+		<meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+		<link rel = "icon" href = "../../images/pfp.png" type = "image/gif">
+		<link rel = "stylesheet" href = "../../css/styles.css" type = "text/css">
+
+		<style>
+			/*Panels*/
+			article#panels {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				margin: 50px 15%;
+			}
+				/*Details*/
+				section#details {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 0px 0px 30px 0px;
+					border-bottom: 3px solid rgb(84, 106, 123);
+				}
+				section#details > * {
+					margin: 0px 0px 5px 0px;
+				}
+				section#details > p.title {
+					font-family: 'Raleway', sans-serif;
+					font-size: 55px;
+					color: rgb(247, 160, 114);
+				}
+				section#details > p.date, section#details > p.descr {
+					font-family: 'Merriweather', serif;
+					font-size: 20px;
+					color: rgb(84, 106, 123);
+				}
+				/*Blog Itself*/
+				section#blog {
+					grid-column: 1 / 2;
+					grid-row: 2 / 3;
+				}
+				section#blog > section {
+					margin-bottom: 50px;
+				}
+				section#blog > section > p, section > ol, section > ul, section#sources > a {
+					display: block;
+					margin: 0px 0px 15px 0px;
+					font-family: 'Merriweather', serif;
+					font-size: 16px;
+					line-height: 1.5;
+					color: rgb(57, 61, 63);
+					transition: 0.3s;
+				}
+				li:not(nav > ul > li) {
+					margin-bottom: 10px;
+				}
+				section#blog > section > h1 {
+					margin: 0px 0px 15px 0px;
+					font-family: 'Raleway', serif;
+					font-size: 25px;
+					line-height: 1.5;
+					color: rgb(103, 150, 162);
+				}
+				section#blog > section > h2 {
+					margin: 0px 0px 15px 0px;
+					font-family: 'Raleway', serif;
+					font-size: 22px;
+					line-height: 1.5;
+					color: rgb(84, 106, 123);
+				}
+				section#blog > figure {
+					position: relative;
+					border-radius: 15px;
+					margin: 0px;
+    			padding-bottom: 56.25%;
+    			height: 0;
+					width: 100%;
+					overflow: hidden;
+				}
+				section#blog > figure > iframe {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+				section#sources {
+					margin-top: 100px;
+				}
+				section#sources > a:hover {
+					color: rgb(247, 160, 114);
+				}
+		</style>
+
+		<script src = "../js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- The following code is not yet configured to be responsive to screen size-->
+
+		<!-- Navigation Bar -->
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href = "../../index.html">Home</a>
+					</li>
+					<li>
+						<a href = "../about.html">About</a>
+					</li>
+					<li>
+						<a href = "../portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href = "../projs.html">Projects</a>
+					</li>
+					<li>
+						<a id = "active" href = "../blog.html">Blog</a>
+					</li>
+					<li>
+						<a href = "../comms.html">Commissions</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+
+			<!-- Main Graphic -->
+			<figure id = "graphic">
+				<img src = "../../images/blog/projmanage.png">
+			</figure>
+
+			<!-- Panels -->
+			<article id = "panels">
+				<!-- Blog Title -->
+				<section id = "details">
+					<p class = "title">Project Management</p>
+					<p class = "date">November 17, 2021</p>
+					<p class = "descr">by Dane Hablo | Life Skills</p>
+				</section>
+
+				<!-- Blog Itself -->
+				<section id = "blog">
+					<section>
+						<p>When working with big projects, from creating a 2D animated short film to developing a product for Science and Technology, you may be coordinating with different people on a number of different tasks, all with different deadlines. But even if you're working on these alone, it can be overwhelming to manage so many spinning plates. Mismanaging them can lead to burnout or delays producing something with less of the expected quality or even the total cancellation of the project.</p>
+
+						<p>Therefore, looking at your work through the <b>lens of project management</b> and using the proper tools and methodologies can assist you in handling the tasks which can enable your work to be realized and completed.</p>
+					</section>
+					<section>
+						<h1>What is it?</h1>
+						<p>This so-called "project management" focuses on <b>planning</b> and <b>organizing</b> a project and its resources such as time or budget. It makes use of specific knowledge, skills, tools, and techniques allowing you to structure steps necessary to deliver the desired result or something of value to the general public.</p>
+					</section>
+					<section>
+						<h1>Well then, how do you do it?</h1>
+						<p>To run any project, you need two major methodologies. The first one is a <b>project life cycle</b>, and the second is the <b>project management process</b>. The definitions of the two are often mistaken. The project management process is used to define, plan, control, monitor, and close the project; on the other hand, the project life cycle is defined as the work done in building and finishing the project itself. The former is not customizable, while the latter is (often according to the nature of the project).</p>
+
+						<p>For example, the life cycle of building a consumer product could be:</p>
+						<ol>
+							<li><b>Analysis</b></li>
+							<li><b>Design</b></li> 
+							<li><b>Construction</b></li> 
+							<li><b>Testing</b></li> 
+							<li><b>Implementation</b></li>
+						</ol>
+
+						<p>Its project management processes (or <b>process groups</b>) are similar to any other project:</p>
+						<ol>
+							<li><b>Initiation</b></li> 
+							<li><b>Planning</b></li> 
+							<li><b>Executing + Monitoring and Controlling</b></li> 
+							<li><b>Closing</b></li>   
+						</ol>
+
+						<h2>Initiation</h2>
+						<p>The type and scope of your project are determined at this initial phase. There are two tasks for this process group:</p>
+						<ol>
+							<li><b>Creating a Project Charter</b></li> 
+								<ul>
+									<li>Answers the question: "Why you are doing what you are doing?"</li>
+									<li>Includes your objectives, scope, a rough idea for the cost and time, key stakeholders, and milestones</li>
+									<li>Doesn't have to be detailed</li> 
+								</ul>
+							<li><b>Identifying your Stakeholders (Stakeholder Register)</b></li>
+								<ul>
+									<li>Answers the following questions:</li>
+									<ul>
+										<li>Who is your sponsor?</li>
+										<li>Who gives you the go or no-go?</li>
+										<li>Who is the project manager?</li> 
+										<li>Who is going to be part of the project team?</li>
+									</ul>
+									<li>Allows you to identify who to ask for approval, critique, or Consultation on your idea from the Project Charter</li>
+									<li>Doesn't have to be detailed</li>
+								</ul>
+						</ol>
+						<h2><b>Planning</b></h2>
+						<p>The planning stage further examines how you want to do what you want to do. In this stage, you will build a budget, create your schedule, and identify possible risks and challenges.</p>
+						<ol>
+							<li><b>Collecting Requirements</b></li>
+								<ul>
+									<li>Here, you further append details and specifications to the Project Charter you have created in the Initiation process group</li>
+									<li>You also determine, document, and manage information from your primary stakeholders concerning their needs & requirements to meet project objectives</li>
+								</ul>
+							<li><b>Defining the Scope</b></li>
+								<ul>
+									<li>Defining the scope, as the name implies, is all about what is and what is not included in the project, a scope.</li>
+									<li>Avoid making it too broad or too vague that makes it extremely hard to execute later</li>
+									<li>Try to not go overboard but make it clear and concise</li>
+								</ul>
+							<li><b>Scope Baseline</b></li>
+								<ul>
+									<li><b>Scope statement</b></li>
+										<ul>
+											<li>May include product scope, project scope, your <b>*deliverables</b>, product acceptance criteria, what is not part of the project, constraints, and assumptions</li>
+										</ul>
+									<li><b>Work Breakdown Structure (WBS)</b></li>
+										<ul>
+											<li>Breaks the project into smaller and more manageable pieces (called <b>Work Packages</b>)</li>
+										</ul>
+									<li><b>WBS Dictionary</b></li>
+										<ul>
+											<li>Contains the definitions for every single work package</li>
+											<li>Allows you to not be prone to <b>**scope creep</b></li>
+										</ul>
+							<li><b>Time Management / Developing a Schedule</b></li>
+								<ul>
+									<li>Here, you start giving estimates for how long each work package will take</li>
+									<li><b>Gantt Chart</b></li>
+										<ul>
+											<li>A type of bar chart that can be used to illustrate activities against time</li>
+										</ul>
+									<li><b>Fast-Tracking and Project Crashing</b></li>
+										<ul>
+											<li>Fast-tracking means performing more activities simultaneously, without waiting for each work package to be completed separately</li>
+											<li>Project crashing is the shortening of the duration of each work package by adding more resources</li>
+										</ul>
+								</ul>
+							<li><b>Cost Management</b></li>
+								<ul>
+									<li>Similar to Time Management, you’ll be giving your cost assumptions for each work package</li>
+									<li>Taking them all into account will allow you to come up with a budget</li>
+								</ul>
+						</ol>
+						<p>*A deliverable is an item or service created through a project and is intended to be delivered to consumers.</p>
+						<p>*Scope creep refers to modifications, continual or uncontrolled expansion in the scope of a project at any time after it begins.</p>
+
+						<h2>Production or Execution</h2>
+						<p>Though this process group will take the longest, it is one of the most exciting and easy parts of the project. This is when you'll now be doing what you have been planning this whole time; <b>complete the tasks you've defined</b> in the project management plan and meet the objectives.</p> 
+
+						<h2>Monitoring and Controlling</h2>
+						<p>This section is done along with Production and Execution wherein we <b>measure the performance of your project</b> against the plan and make sure you are hitting your ultimate goals.</p>
+
+						<h2>Closing</h2>
+						<p>This is the final phase in project management. The product may be done but the project may not be. So, what do we do now? Well, what you need to do to conclude <b>depends</b> on your project. But in general, finalize everything (procurements and lessons learned) and prepare for the release of the product (e.g. your client). And finally, <b>go celebrate!</b></p>
+					</section>
+					<section>
+						<h1>Why do we do it?</h1>
+						<p>Although these procedures may appear to be a waste of time, particularly when working on personal projects, they are the <b>foundations for your ultimate goals</b>. They guarantee that the project's purpose, vision, and goals are upheld, and risks and problems are effectively avoided or solved.</p>
+						<p>Project management may assist you in setting expectations and boundaries for your team, especially yourself. Your workflow will be significantly smoother as a result of the tools and documents produced. And, once you've completed the key administrative portions of your job, you'll soon be <b>immersed in the creative process</b>.</p>
+					</section>
+					<figure> 	
+						<iframe src = "https://www.youtube.com/embed/ZKOL-rZ79gs?autoplay=1&mute=1" title = "YouTube video player" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</figure>
+					<section id = "sources">
+						<h2>Sources and References</h2>
+						<a href = "https://www.pmi.org/about/learn-about-pmi/what-is-project-management">https://www.pmi.org/about/learn-about-pmi/what-is-project-management</a>
+						<a href = "https://www.usability.gov/what-and-why/project-management.html">https://www.usability.gov/what-and-why/project-management.html</a>
+						<a href = "https://www.forbes.com/sites/danabrownlee/2019/07/14/project-management-isnt-just-for-project-managers-4-skills-you-need-to-know/">https://www.forbes.com/sites/danabrownlee/2019/07/14/project-management-isnt-just-for-project-managers-4-skills-you-need-to-know/</a>
+						<a href = "https://blog.fracturedatlas.org/project-management-introduction-artists">https://blog.fracturedatlas.org/project-management-introduction-artists</a>
+						<a href = "https://www.tensteppm.com/open/A5.2PMvsPL.html">https://www.tensteppm.com/open/A5.2PMvsPL.html</a>
+					</section>
+				</section>
+			</article>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<section id = "socials2">
+				<div>
+					<figure class = "twt">
+						<a href = "https://twitter.com/urboidane">
+							<img src = "../../images/socials/twt.png">
+						</a>
+					</figure>
+					<figure class = "ig">
+						<a href = "https://www.instagram.com/urboidane/">
+							<img src = "../../images/socials/ig.png">
+						</a>
+					</figure>
+				</div>
+			</section>
+			<section id = "email">
+				<a href = "https://mail.google.com/mail/#inbox?compose=GTvVlcSKjDVsqKKGztWPWQwrHmpPDJBKnpGzzZMkjHBbsCdqBMLCVHFpjFCfhPMkmClSQRKwSvklb">danezekielhablo@gmail.com</a>
+			</section>
+			<figure id = "button">	
+					<img src = "../../images/arrow.png">
+			</figure>
+			<div id = "blank1"></div>
+			<div id = "blank2"></div>
+		</footer>
+	</body>
+</html>

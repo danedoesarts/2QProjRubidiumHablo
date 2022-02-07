@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@700&display=swap');
+
+body {
+	margin: 0px;
+	background-color: rgb(247, 255, 247);
+}
+
+/* Header */
+header {
+	padding: auto;
+	font-family: 'Raleway', sans-serif;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	background-color: rgb(84, 107, 124);
+	z-index: 5;
+}
+nav > ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+nav > ul > li {
+	float: left;
+}
+nav > ul > li > a {
+	display: block;
+	padding: 15px;
+	width: 80px;
+	color: rgb(255, 255, 255);
+	border-bottom: 5px solid rgb(84, 107, 124);
+	font-size: 10.5px;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.3s;
+}
+nav > ul > li > a:hover:not(a#active) {
+	font-size: 11px;
+	background-color: rgb(76, 98, 116);
+	border-bottom-color: rgb(76, 98, 116);
+}
+a#active {
+	font-size: 11px;
+	border-bottom: 5px solid rgb(247, 161, 114);
+	background-color: rgb(76, 98, 116);
+}
+
+/*Main*/
+main {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+	/*Main Graphic*/
+	figure#graphic {
+		grid-column: 1 / 4;
+		grid-row: 1 / 2;
+		display: flex;
+		height: 50vh;
+		overflow: hidden;
+		align-items: center;
+  	justify-content: center;
+		margin: 0px;
+	}
+	figure#graphic > img {
+		width: 100%;
+		z-index: -1;
+	}
+	section#descr {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	p#name {
+		font-family: 'Raleway', sans-serif;
+		font-size: 55px;
+		color: rgb(255, 255, 255);
+		margin: 0px;
+	}
+	p#addescr {
+		font-family: 'Merriweather', serif;
+		font-size: 20px;
+		color: rgb(255, 255, 255);
+		margin: 0px;
+	}
+	section#socials {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	section#socials > p {
+		font-family: 'Raleway', sans-serif;
+		font-size: 17px;
+		color: rgb(255, 255, 255);
+		margin: 0px;
+	}
+	section#socials > div {
+		display: flex;
+	}
+	#socials > div > .twt, #socials > div > .ig {
+		margin: 10px 10px 20px 0px;
+	}
+	figure.twt {
+		width: 40px;
+		height: 40px;
+		border-radius: 15%;
+		background-color: rgb(118, 236, 255);
+		transition: 0.3s;
+	}
+	figure.ig {
+		width: 40px;
+		height: 40px;
+		border-radius: 15%;
+		background-color: rgb(255, 105, 123);
+		transition: 0.3s;
+	}
+	figure.twt:hover, figure.ig:hover {
+		background-color: rgb(247, 161, 114);
+	}
+	figure.twt > a, figure.ig > a {
+		display: block;
+	}
+	figure.twt > a > img, figure.ig > a > img {
+		width: 30px;
+		margin: 5px;
+	}
+
+/*Footer*/
+footer {
+	display: grid;
+	grid-template-columns: 2fr 5fr 5fr 2fr;
+}
+section#socials2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+} 
+section#socials2 > div {
+	display: flex;
+}
+section#socials2 > div > figure.twt, section#socials2 > div > figure.ig {
+	margin: 0px 10px 5px 0px;
+}
+section#email {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	display: flex;
+	align-items: flex-start;
+	text-decoration: none;
+}
+section#email > a {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	margin: 5px 0px 0px;
+	transition: 0.3s;
+}
+section#email > a:hover {
+	font-size: 15.5px;
+}
+figure#button {
+	grid-column: 3 / 4;
+	grid-row: 1 / 3;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+figure#button > img {
+	width: 30px;
+	height: 20px;
+}
+div#blank1 {
+	grid-column: 1 / 5;
+	grid-row: 1 / 3;
+	background-color: rgb(84, 107, 124);
+	height: 125px;
+	z-index: -1;
+}
+div#blank2 {
+	grid-column: 1 / 5;
+	grid-row: 3 / 4;
+	background-color: rgb(96, 145, 158);
+	height: 25px;
+	z-index: -1;
+}

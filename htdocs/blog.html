@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>dane hablo</title>
+		<meta name = "author" content = "Dane Ezekiel Hablo">
+		<meta name = "keywords" content = "dane hablo">
+		<meta name = "revised" content = "17-11-2021">
+		<meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+		<link rel = "icon" href = "../images/pfp.png" type = "image/gif">
+		<link rel = "stylesheet" href = "../css/styles.css" type = "text/css">
+
+		<style>
+			/* Graphic Gradient */
+			figure#graphic {
+				background-image: linear-gradient(to left, rgba(98, 146, 158, 0), rgba(98, 146, 158, 0.90));
+			}
+			/*Panels*/
+			section#panels {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: grid;
+				grid-template-columns: 5fr 2fr;
+				gap: 30px;
+				margin: 50px 0px;
+			}
+			/*Blog Post Panels*/
+			div#blogPanels {
+				grid-column: 1 / 2;
+				display: flex;
+				flex-direction: column;
+			}
+			div#blogPanels > a {
+				text-decoration: none;
+			}
+			div.panel {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr .15fr .15fr .25fr;
+				gap: 15px;
+				margin-bottom: 30px;
+				border-radius: 15px;
+				background-color: rgb(98, 146, 158);
+				transition: 0.3s;
+			}
+			div.panel > .image {
+				grid-column: 1 / 2;
+				grid-row: 1 / 3;
+				padding: 7px 7px 0px 7px;
+			}
+			div.panel > .image > img {
+				border-radius: 7.5px;
+				width: 100%;
+			}
+			div.panel > .date {
+				justify-self: center;
+				grid-column: 1 / 2;
+				grid-row: 2 / 4;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				height: 100%;
+				border-radius: 7.5px;
+				background-color: rgb(84, 106, 123);
+				z-index: 1;
+			}
+			div.panel > .date > .month {
+				font-family: 'Raleway', sans-serif;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+				margin: 0px;
+			}
+			div.panel > .date > .day {
+				font-family: 'Merriweather', serif;
+				font-size: 15px;
+				color: rgb(255, 255, 255);
+				margin: 0px;
+			}
+			div.panel > .text {
+				grid-column: 1 / 2;
+				grid-row: 4 / 5;
+				display: flex;
+				flex-direction: column;
+				padding: 0px 10px 20px 10px;
+			}
+			div.panel > .text > * {
+				text-align: center;
+			}
+			div.panel > .text > p#title {
+				font-family: 'Raleway', sans-serif;
+				font-size: 35px;
+				color: rgb(255, 255, 255);
+				margin: 0px;
+			}
+			div.panel > .text > p#descr {
+				font-family: 'Merriweather', serif;
+				font-size: 11px;
+				color: rgb(255, 255, 255);
+				margin: 5px 0px;
+			}
+			div.panel > .text > div#addescr {
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				font-family: 'Merriweather', serif;
+				font-size: 13px;				
+   			text-overflow: ellipsis;
+				color: rgb(255, 255, 255);
+				margin: 0px;
+			}
+			div.panel:hover {
+				background-color: rgb(247, 160, 114);
+			}
+			/*Additional Panels*/
+			sidebar#twtprofile {
+				grid-column: 2 / 3;
+			}
+			sidebar#twtprofile > div {
+				box-sizing: border-box;
+				border-radius: 7.5px;
+				border: 7px solid rgb(247, 160, 114);
+			}
+		</style>
+
+		<script src = "../js/script.js"></script>
+	</head>
+	<body>
+
+		<!-- The following code is not yet configured to be responsive to screen size-->
+
+		<!-- Navigation Bar -->
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href = "../index.html">Home</a>
+					</li>
+					<li>
+						<a href = "about.html">About</a>
+					</li>
+					<li>
+						<a href = "portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href = "projs.html">Projects</a>
+					</li>
+					<li>
+						<a id = "active" href = "blog.html">Blog</a>
+					</li>
+					<li>
+						<a href = "comms.html">Commissions</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+
+			<!-- Main Graphic -->
+			<figure id = "graphic">
+				<img src = "../images/blog/blog.png">
+			</figure>
+			<section id = "descr">
+				<p id = "name">blog</p>
+				<p id = "addescr">some of my thoughts about random topics</p>
+			</section>
+
+			<!-- Panels -->
+			<section  id = "panels">
+				<!-- Blog Panels -->
+				<div id = "blogPanels">
+					<a href = "blogs/projManagement.html">
+						<div class = "panel">
+							<div class = "image">
+								<img src = "../images/blog/projmanage.png">
+							</div>
+							<time class = "date">
+								<p class = "month">NOV</p>
+								<p class = "day">17</p>
+							</time>
+							<detail class = "text">
+								<p id = "title">Project Management</p>
+								<p id = "descr">by Dane Hablo | Life Skills</p>
+								<div id = "addescr">When working with big projects, from creating a 2D animated short film to developing a product for Science and Technology, you may be coordinating with different people on a number of different tasks, all with different deadlines. But even if you're working on these alone, it can be overwhelming to manage so many spinning plates. Mismanaging them can lead to burnout or delays producing something with less of the expected quality or even the total cancellation of the project.</div>
+							</detail>
+						</div>
+					</a>
+				</div>
+
+				<!-- Additional Panels -->
+				<!-- Further research is required for the implementation of a filter of some sort -->
+				<sidebar id = "twtprofile">
+					<div>
+						<a class="twitter-timeline" data-height="1000" data-theme="light" href="https://twitter.com/danedoesarts?ref_src=twsrc%5Etfw">Tweets by danedoesarts</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</sidebar>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<section id = "socials2">
+				<div>
+					<figure class = "twt">
+						<a href = "https://twitter.com/urboidane">
+							<img src = "../images/socials/twt.png">
+						</a>
+					</figure>
+					<figure class = "ig">
+						<a href = "https://www.instagram.com/urboidane/">
+							<img src = "../images/socials/ig.png">
+						</a>
+					</figure>
+				</div>
+			</section>
+			<section id = "email">
+				<a href = "https://mail.google.com/mail/#inbox?compose=GTvVlcSKjDVsqKKGztWPWQwrHmpPDJBKnpGzzZMkjHBbsCdqBMLCVHFpjFCfhPMkmClSQRKwSvklb">danezekielhablo@gmail.com</a>
+			</section>
+			<figure id = "button">	
+					<img src = "../images/arrow.png">
+			</figure>
+			<div id = "blank1"></div>
+			<div id = "blank2"></div>
+		</footer>
+	</body>
+</html>
