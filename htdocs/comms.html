@@ -15,6 +15,26 @@
 			figure#graphic {
 				background-image: linear-gradient(to left, rgba(98, 146, 158, 0), rgba(98, 146, 158, 0.90));
 			}
+
+			/* About */
+			section#status {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: flex;
+				margin: 150px 0px;
+  			align-items: center;
+				gap: 30px;
+			}
+			section#status > p {
+				width: 45%;
+				font-family: 'Merriweather', serif;
+				font-size: 16px;
+				line-height: 1.5;
+				color: rgb(57, 61, 63);
+			}
+			section#status > img {
+				width: 55%;
+			}
 		</style>
 
 		<script src = "../js/script.js"></script>
@@ -59,6 +79,12 @@
 			<section id = "descr">
 				<p id = "name">commisions</p>
 				<p id = "addescr">what do you want me to draw?</p>
+			</section>
+
+			<!-- More Info -->
+			<section id = "status">
+				<p>Seeking self-reliance, I am working on starting commissions to gain a little bit for my own basic needs. <br><br> I hope to see you then!</p>
+				<img src = "../images/blank.png">
 			</section>
 		</main>
 

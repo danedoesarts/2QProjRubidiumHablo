@@ -15,6 +15,50 @@
 			figure#graphic {
 				background-image: linear-gradient(to left, rgba(98, 146, 158, 0), rgba(98, 146, 158, 0.90));
 			}
+
+			/*Blog Panels*/
+			section#subfolder {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px;
+				margin: 50px 0px;
+				justify-content: space-between;
+			}
+			section#subfolder > a.panel {
+				text-decoration: none;
+				text-align: center;
+				transform: rotate(0deg);
+				transition: 0.3s ease-in-out;
+			}
+			section#subfolder > a.panel > div {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				border-radius: 15px;
+				padding: 7px;
+				background-color: rgb(98, 146, 158);
+				transition: 0.3s;
+			}
+			section#subfolder > a.panel > div > img {
+				box-sizing: border-box;
+				border-radius: 7.5px;
+				width: 100%;
+			}
+			section#subfolder > a.panel > div {
+				padding: 5px;
+			}
+			section#subfolder > a.panel > div > p#title {
+				font-family: 'Raleway', sans-serif;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+				margin: 0px 0px 5px 0px;
+			}
+			section#subfolder > a.panel > div:hover {
+				background-color: rgb(247, 160, 114);
+				transform: rotate(2.5deg);
+			}
 		</style>
 
 		<script src = "../js/script.js"></script>
@@ -54,11 +98,51 @@
 
 			<!-- Main Graphic -->
 			<figure id = "graphic">
-				<img src = "../images/blank.png">
+				<img src = "../images/homepage/DoggoinJapan.png">
 			</figure>
 			<section id = "descr">
 				<p id = "name">portfolio</p>
 				<p id = "addescr">immerse yourself in my humble little collection of artworks</p>
+			</section>
+
+			<!-- Subfolders -->
+			<section id = "subfolder">
+				<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">Landscapes</p>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">GIFS</p>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">Characters</p>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">Pixels</p>
+					</div>
+				</a>
+				<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">Storyboards</p>
+					</div>
+				</a>
+			 	<a class = "panel" href = "htdocs/portfolioSubfolders/.html">
+					<div>
+						<img src = "../images/blank.png">
+						<p id = "title">Videos and Animation</p>
+					</div>
+				</a>
 			</section>
 		</main>
 

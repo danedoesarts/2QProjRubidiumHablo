@@ -15,6 +15,26 @@
 			figure#graphic {
 				background-image: linear-gradient(to left, rgba(98, 146, 158, 0), rgba(98, 146, 158, 0.90));
 			}
+
+			/* About */
+			section#status {
+				grid-column: 2 / 3;
+				grid-row: 3 / 4;
+				display: flex;
+				margin: 150px 0px;
+  			align-items: center;
+				gap: 30px;
+			}
+			section#status > p {
+				width: 45%;
+				font-family: 'Merriweather', serif;
+				font-size: 16px;
+				line-height: 1.5;
+				color: rgb(57, 61, 63);
+			}
+			section#status > img {
+				width: 55%;
+			}
 		</style>
 
 		<script src = "../js/script.js"></script>
@@ -54,11 +74,17 @@
 
 			<!-- Main Graphic -->
 			<figure id = "graphic">
-				<img src = "../images/blank.png">
+				<img src = "../images/about.jpg">
 			</figure>
 			<section id = "descr">
 				<p id = "name">about</p>
 				<p id = "addescr">who am i?</p>
+			</section>
+
+			<!-- More Info -->
+			<section id = "status">
+				<p>Hello, Dane here! I'm an (aspiring) Philippine-based artist and animator with a knack for visual storytelling. <br><br> I am currently balancing my STEM-focused highschool and arts!</p>
+				<img src = "../images/blank.png">
 			</section>
 		</main>
 
